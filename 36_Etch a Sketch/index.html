@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Liao Zhu | Etch a Sketch</title>
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0"></meta>
+</head>
+<body>
+    <div class="extra">
+            <div class="setting">
+                <input type="color" id="color-selector" value="#000000">
+                <button class="setting-button" id="paint">Paint</button>
+                <button class="setting-button" id="erase">Erase</button>
+                <button class="setting-button" id="clear">Clear</button>
+                <label for="size-selector" id="size-text">Grid:<span id="size-value"></span></label>
+                <input type="range" min="16" max="64" value="16" class="slider" id="size-selector">
+                <button class="setting-button" id="grid-toggle">Toggle Grid</button>
+            </div>
+            <div class="setting-misc">
+                <button class="setting-button" id="save"><img class="image" id="save-image" src="images/save.png"></button>
+            </div>
+        </div>
+        <div class="board" id="board-container"></div> 
+    <script src="./JS/html2canvas.js"></script>
+    <script src="./JS/script.js"></script>
+</body>
+</html>

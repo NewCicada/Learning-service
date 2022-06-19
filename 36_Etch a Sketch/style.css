@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap');
+
+* {
+    user-select: none;
+    -webkit-user-select: none;
+    font-family: 'Josefin Sans', Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Settings */
+.setting {
+    display: flex;
+    flex-direction: column;
+    outline: 2px solid black;
+    border-radius: 10px;
+    margin: 50px;
+    padding: 10px;
+    align-items: center;
+}
+
+.setting-misc {
+    display: flex;
+    outline: 2px solid black;
+    border-radius: 10px;
+    margin: 50px;
+    padding: 10px;
+    align-items: center;
+}
+
+#color-selector {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background-color: transparent;
+    width: 100px;
+    height: 100px;
+    border: none;
+    cursor: pointer;
+}
+
+#color-selector::-webkit-color-swatch {
+    border-radius: 50%;
+    border: 3px solid #000000;
+}
+
+#color-selector::-moz-color-swatch {
+    border-radius: 50%;
+    border: 5px solid #000000;
+}
+
+#color-selector:hover {
+    transform: scale(1.1);
+}
+
+#save {
+    background-color: Transparent;
+    background-repeat: no-repeat;
+    border: none;
+    cursor: pointer;
+}
+
+#save-image {
+    width: 50px;
+    height: 50px;
+}
+
+#save-image:hover {
+    transform: scale(1.1);
+}
+
+.setting-button {
+    margin: 10px;
+    background-color: #fff;
+    border-radius: 5px;
+    width: 100px;
+}
+
+.setting-button:hover {
+    transform: scale(1.1);
+    color: #ffffff;
+}
+
+#paint:hover {
+    background-color: #ff206e;
+}
+
+#erase:hover {
+    background-color: #2ec4b6;
+}
+
+#clear:hover {
+    background-color: #e5383b;
+}
+
+#grid-toggle:hover {
+    background-color: #ccc5b9;
+    color: #000000;
+}
+
+/* Board */
+.board {
+    display: grid;
+    width: 500px;
+    height: 500px;
+    border: 5px solid #000000;
+}
+
+/* Mobile */
+@media only screen and (max-width: 767px) {
+    html,
+    body {
+        display: flex;
+        flex-direction: column;
+        overflow: hidden;
+        text-align: center;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .setting {
+        display: block;
+        text-align: center;
+        width: 300px;
+        margin: 0px;
+        margin-top: 10px;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .setting-misc {
+        display: contents;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    #save-image {
+        width: 30px;
+        height: 30px;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .board {
+        width: 350px;
+        height: 350px;
+    }
+}
