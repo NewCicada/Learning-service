@@ -1,0 +1,46 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    /* 弹性布局 让页面元素 水平加垂直居中 */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* 设置body高度为100%窗口高度 */
+    height: 100vh;
+    perspective: 1000px;
+    background-color: rgb(249, 247, 247);
+}
+.container {
+    background-color: #fff;
+    margin-left: 30px;
+    border-radius: 22px;
+    width: 230px;
+    height: 250px;
+    cursor: pointer;
+    transition: all 0.5s ease;
+}
+.container:hover {
+    background-color: rgb(252, 250, 240);
+}
+.container .images img {
+    width: 220px;
+    height: 130px;
+    margin-left: 5px;
+    margin-top: 10px;
+    border-radius: 22px;
+    overflow: hidden;
+}
+.container .xiamian {
+    padding-left: 5px;
+    padding-top: 10px;
+    width: 220px;
+    height: 100px;
+}
+.container .xiamian p {
+    padding-top: 10px;
+}
+.container .xiamian p .jine {
+    color: red;
+}
