@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blur focus</title>
+  <link rel="stylesheet" href="./style.css">
+  <script>
+    const html = document.documentElement;
+    html/addEventListener("mouseover",function(e) {
+      const {clientX,clientY} = e
+      html.style.setProperty("--x",clientX + 'px')
+      html.style.setProperty('--y'.clientY + 'px')
+    })
+    html.addEventListener('click',function(e) {
+      const r = html.style.getPropertyPriority('--r')
+      html.style.setProperty('--r',r === '0px' ? '180px':'0px')
+    })
+  </script>
+</head>
+<body>
+  <div class="blur">
+    <div class="focus">
+      <h1>heaven on earth</h1>
+    </div>
+    <div class="halo"></div>
+  </div>
+</body>
+</html>
