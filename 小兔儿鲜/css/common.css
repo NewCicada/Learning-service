@@ -1,0 +1,690 @@
+.w {
+    width: 1220px;
+    margin: 0 auto;
+}
+
+.top {
+    height: 52px;
+    line-height: 52px;
+    background-color: #333;
+}
+
+.top-nav {
+    float: right;
+}
+
+.top-nav li {
+    float: left;
+}
+
+.top-nav li a {
+    color: #fff;
+    padding: 0 13px;
+    font-size: 14px;
+    border-right: 0.5px solid #666;
+}
+
+.nav {
+    height: 130px;
+    position: relative;
+}
+
+.phone span {
+    display: inline-block;
+    width: 11px;
+    height: 16px;
+    margin-right: -4px;
+    vertical-align: middle;
+    background: url(../img/sprites.png) no-repeat -160px -70px;
+}
+
+.logo {
+    float: left;
+    width: 207px;
+    height: 70px;
+    margin: 30px 0;
+}
+
+.logo a {
+    display: block;
+    width: 207px;
+    height: 70px;
+    font-size: 0;
+}
+
+.nav-nav {
+    float: left;
+    margin: 56px 16px 0;
+}
+
+.nav-nav li {
+    float: left;
+    padding: 0 18px;
+}
+
+.nav-nav li a {
+    display: block;
+    padding-bottom: 6px;
+}
+
+.nav-nav li a:hover {
+    color: #27ba9b;
+    border-bottom: 1px solid #27ba9b;
+}
+
+.search {
+    float: left;
+    margin: 56px 16px 0;
+    width: 202px;
+    height: 28px;
+    position: relative;
+}
+
+.search input {
+    width: 100%;
+    height: 100%;
+    color: #999;
+    border-bottom: 3px solid #e7e7e7;
+    padding-left: 24px;
+}
+
+.search::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 4px;
+    width: 20px;
+    height: 20px;
+    background-color: #27ba9b;
+    background: url(../img/sprites.png) no-repeat -79px -70px;
+}
+
+.card {
+    position: relative;
+    margin: 56px 15px 0;
+    float: left;
+}
+
+.card .name {
+    position: absolute;
+    top: -15px;
+    left: 14px;
+    background-color: #e26237;
+    padding: 1px 6px;
+    font-size: 12px;
+    color: #fff;
+    border-radius: 10px;
+}
+
+.card a {
+    position: relative;
+    display: block;
+    width: 23px;
+    height: 23px;
+    background: url(../img/sprites.png) no-repeat -119px -70px;
+}
+
+.card a span {
+    display: block;
+    position: absolute;
+    left: 14px;
+    top: -5px;
+    font-size: 12px;
+    padding: 0 5px;
+    color: #fff;
+    background-color: #e26237;
+    border-radius: 8px;
+}
+
+.banner {
+    height: 500px;
+    position: relative;
+}
+
+.swiper {
+    width: 100%;
+    height: 100%;
+}
+
+.swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.category {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 250px;
+    height: 500px;
+    background-color: #000;
+    z-index: 99;
+    opacity: 0.8;
+}
+
+.category li {
+    position: relative;
+    height: 55px;
+}
+
+.category li a {
+    color: #ffff;
+    font-size: 14px;
+    line-height: 55px;
+    padding-left: 20px;
+}
+
+.category li a em {
+    padding: 0 10px;
+}
+
+.category li:hover {
+    background-color: #27ba9b;
+}
+
+.container {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 970px;
+    height: 500px;
+    padding: 20px 8px 0;
+    display: none;
+    z-index: 99;
+}
+
+.box {
+    height: 320px;
+    margin: 30px 0;
+}
+
+.box li {
+    float: left;
+    width: 234px;
+    height: 305px;
+    margin-right: 10px;
+}
+
+.wapper li {
+    float: left;
+    width: 290px;
+    height: 120px;
+    background-color: #fff;
+    margin: 15px 10px;
+    padding: 10px;
+    line-height: 24px;
+}
+
+.wapper li:hover {
+    background-color: #f0f9f4;
+}
+
+.wapper li img {
+    float: left;
+    width: 95px;
+    height: 95px;
+    margin-right: 10px;
+}
+
+.name {
+    color: #666;
+}
+
+.container .desc {
+    font-size: 14px;
+    color: #999;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.Pr-ice {
+    font-size: 22px;
+    color: red;
+}
+
+.container .remcond {
+    font-size: 20px;
+    font-weight: 400;
+}
+.container small {
+    margin-left: 8px;
+    font-size: 16px;
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+    width: 45px !important;
+    height: 45px !important;
+    border-radius: 50% !important;
+    color: transparent !important;
+    background: rgba(0, 0, 0, 0.4) url(../img/sprites.png) no-repeat;
+}
+
+.swiper-button-prev {
+    left: 290px !important;
+    background-position: 14px -59px;
+}
+
+.swiper-button-next {
+    right: 22px !important;
+    background-position: -23px -59px;
+}
+
+.swiper-pagination-bullet {
+    width: 10px !important;
+    height: 10px !important;
+    margin-left: 10px;
+}
+
+.layer ul {
+    position: absolute;
+    display: none;
+    top: 105px;
+    width: 1220px;
+    height: 132px;
+    z-index: 100;
+    background-color: #fff;
+    box-shadow: 0 0 5px #ccc;
+}
+
+.layer li {
+    float: left;
+    width: 140px;
+    margin-left: 15px;
+    text-align: center;
+}
+
+.layer li img {
+    width: 100px;
+    height: 100px;
+    margin: 0 10px;
+}
+
+.contain {
+    margin-top: 30px;
+}
+
+.box-hd {
+    padding: 40px 0;
+    height: 100px;
+}
+
+.box-hd h4 {
+    float: left;
+    font-weight: normal;
+    font-size: 30px;
+}
+
+.box-hd h4 small {
+    font-size: 16px;
+    margin-left: 20px;
+    color: #999;
+}
+
+.box-hd .more {
+    float: right;
+    padding: 0 20px;
+    color: #999;
+}
+
+.more::after {
+    content: '';
+    display: inline-block;
+    width: 7px;
+    height: 13px;
+    margin-left: 10px;
+    background: url(../img/sprites.png) no-repeat 0 -109px;
+}
+
+.box-bd {
+    height: 400px;
+}
+
+.box-bd li {
+    float: left;
+    position: relative;
+    transition: all 0.4s;
+    width: 24%;
+    height: 100%;
+    margin-right: 10px;
+    background-color: #f0f9f4;
+}
+
+.box-bd li img {
+    height: 310px;
+}
+
+.box-bd li h4 {
+    font-weight: normal;
+    font-size: 18px;
+    padding: 12px 30px 0;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    text-align: center;
+}
+
+.box-bd .price {
+    font-size: 22px;
+    color: #cf4444;
+    text-align: center;
+}
+
+.box-bd li:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 30px rgb(0 0 0 / 10%);
+    color: #27ba9b;
+}
+
+.new {
+    position: absolute;
+    top: 18px;
+    left: 16px;
+    width: 30px;
+    font-size: 18px;
+    border: 1px solid #27ba9b;
+    text-align: center;
+    color: #27ba9b;
+}
+
+.info {
+    text-align: center;
+    color: #999;
+}
+
+.hot li {
+    background-color: #fff !important;
+}
+
+.goods-hd {
+    float: right;
+}
+
+.goods-hd li {
+    float: left;
+}
+
+.goods-hd li a {
+    padding: 0 16px;
+}
+
+.goods-hd li a:hover {
+    background-color: #27ba9b;
+    color: #fff;
+}
+
+.goods {
+    height: 610px;
+}
+
+.good-shop {
+    width: 240px;
+    float: left;
+    height: 100%;
+}
+
+.good-shops {
+    float: left;
+    width: 980px;
+    height: 100%;
+}
+
+.good-shops li {
+    position: relative;
+    float: left;
+    width: 240px;
+    height: 300px;
+    padding: 10px 30px;
+    border: 1px solid transparent;
+    overflow: hidden;
+}
+
+.good-shops .name {
+    font-size: 14px;
+    color: #666;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.good-shops .price {
+    font-size: 18px;
+    color: #cf4444;
+}
+
+.good-shops .find-baby h4 {
+    font-weight: normal;
+    font-size: 18px;
+    padding-bottom: 7px;
+    border-bottom: 1px solid #ccc;
+}
+
+.good-shops .find-baby p {
+    font-size: 14px;
+    margin-top: 4px;
+}
+
+.good-shops li:hover {
+    color: #27ba9b;
+    border: 1px solid #27ba9b;
+}
+
+.good-shops li:hover .find-baby {
+    bottom: 0;
+}
+
+.find-baby {
+    position: absolute;
+    left: 0;
+    bottom: -84px;
+    padding: 10px 0;
+    width: 100%;
+    height: 84px;
+    text-align: center;
+    color: #fff;
+    transition: all 0.8s;
+    background-color: #27ba9b;
+}
+
+.good-shops .pic {
+    width: 170px;
+    height: 170px;
+}
+
+.item_list {
+    height: 360px;
+}
+
+.item_list li {
+    float: left;
+    width: 390px;
+    height: 360px;
+    margin-right: 10px;
+    background-color: #fff;
+}
+
+.item_list .pic {
+    position: relative;
+    width: 100%;
+    height: 290px;
+}
+
+.cont_left {
+    position: absolute;
+    bottom: 0;
+    width: 70%;
+    padding: 0 13px;
+}
+
+.cont_left p {
+    white-space: nowrap;
+    overflow: hidden;
+    line-height: 28px;
+    text-overflow: ellipsis;
+}
+
+.cont_left .tittle {
+    font-size: 20px;
+    color: #fff;
+    font-weight: 600;
+}
+
+.cont_left .desc {
+    color: #999;
+}
+
+.cont_price {
+    position: absolute;
+    bottom: 26px;
+    right: 10px;
+    padding: 5px 10px;
+    background-color: #fff;
+    border-radius: 5px;
+    color: #cf4444;
+}
+
+.btm_left {
+    margin: 20px;
+}
+
+.btm_left span {
+    margin-right: 10px;
+}
+
+.btm_left .spank {
+    float: right;
+}
+
+.btm_left em {
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    background: url(../ima/sprites1.png) no-repeat;
+    margin: -3px 2px;
+}
+
+.btm_left .eye {
+    background-position: -40px -0px;
+}
+
+.btm_left .spank em {
+    background-position: -80px -0px;
+}
+
+.service {
+    margin-top: 75px;
+    height: 180px;
+}
+
+.service li {
+    float: left;
+    width: 20%;
+    margin: 0 20px;
+    height: 100%;
+}
+
+.service .number {
+    font-size: 22px;
+    margin-top: 55px;
+    color: rgb(102, 102, 102);
+}
+
+.service .week {
+    font-size: 15px;
+    color: rgb(153, 153, 153);
+}
+
+.kefu {
+    font-size: 16px;
+    color: #999;
+    margin-bottom: 35px;
+}
+
+.ke-fu {
+    float: left;
+    width: 92px;
+    height: 92px;
+    border: 1px solid #eee;
+    margin: 0 10px;
+}
+
+.service .ke,
+.service .fu,
+.service .wu {
+    content: '';
+    display: block;
+    width: 35px;
+    height: 35px;
+    margin: 15px auto;
+    background: url(../img/sprites.png) no-repeat;
+}
+
+.service li p {
+    text-align: center;
+    color: #999;
+}
+
+.service .ke {
+    background-position: -250px -70px;
+}
+
+.service .fu {
+    background-position: -250px -10px;
+}
+
+.service .wu {
+    background-position: -350px -10px;
+}
+
+.footer {
+    height: 340px;
+    background-color: #333;
+}
+
+.slogan {
+    height: 180px;
+    border-bottom: 3px solid #434343;
+}
+
+.slogan li {
+    float: left;
+    width: 20%;
+    height: 68px;
+    margin: 70px 80px;
+}
+
+.slogan li ::before {
+    content: '';
+    display: inline-block;
+    width: 60px;
+    height: 60px;
+    margin: 0px 10px;
+    vertical-align: middle;
+    background: url(../img/sprites.png) no-repeat;
+}
+.slogan .wu ::before {
+    background-position: -65px 0;
+}
+.slogan .xin ::before {
+    background-position: -130px 0;
+}
+.slogan li p {
+    font-size: 30px;
+    color: #fff;
+}
+.copyright {
+    padding-top: 40px;
+    text-align: center;
+}
+.copyright a {
+    color: #999;
+    line-height: 16px;
+    padding: 0 8px;
+}
+.copyright p {
+    color: #999;
+    margin-bottom: 20px;
+}

@@ -1,0 +1,58 @@
+/* 清除内外边距 和 c3 盒子模型 */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font: 16px/1.5 sans-serif;
+    color: #333;
+    background-color: whitesmoke;
+}
+/* 取消li 的小点 */
+li {
+    list-style: none;
+}
+/* 不倾斜 */
+em,
+i {
+    font-style: normal;
+}
+/* 取消下划线， 设置默认颜色 */
+a {
+    text-decoration: none;
+    color: #333;
+}
+a:hover {
+    color: #5eb69c;
+}
+/* 去掉图片底部缝隙 */
+img {
+    vertical-align: middle;
+    width: 100%;
+    height: 100%;
+}
+input {
+    padding: 0;
+    border: none;
+    /* 取消轮廓线 */
+    outline: none;
+    color: #333;
+}
+/* 鼠标变为小手 */
+button {
+    cursor: pointer;
+}
+/* 清除浮动 */
+.clearfix:before,
+.clearfix:after {
+    content: '';
+    display: table;
+}
+.clearfix:after {
+    clear: both;
+}
+/* 照顾ie6 */
+.clearfix {
+    *zoom: 1;
+}
